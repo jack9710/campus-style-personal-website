@@ -1,21 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=Noto+Serif+TC:wght@400;700&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
-  --font-serif: "Playwrite IE", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: "Outfit", "Noto Serif TC", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Outfit", "Noto Serif TC", ui-serif, Georgia, Cambria, serif;
 }
 
 :root {
-  --color-primary: #222222;
-  --color-accent: #888888;
-  --color-bg: #ffffff;
-  --color-footer-bg: #111111;
-  --color-sidebar-bg: #fafafa;
+  --color-primary: #f8fafc;
+  --color-accent: #8b5cf6;
+  --color-bg: #0f172a;
+  --color-footer-bg: #020617;
+  --color-sidebar-bg: #1e293b;
 }
 
 body {
   background-color: var(--color-bg);
   color: var(--color-primary);
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Add an elegant glassmorphism glow to make it super premium */
+.backdrop-blur-sm {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.meme-shadow {
+  box-shadow: 0 20px 40px -15px rgba(0,0,0,0.5);
 }
